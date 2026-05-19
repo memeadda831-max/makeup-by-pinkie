@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Fraunces", serif;
+    --font-body: "Lora", serif;
+    --font-mono: "JetBrainsMono", monospace;
+    --radius: 0.625rem;
+
+    --background: 0.98 0.01 50;
+    --foreground: 0.18 0.01 30;
+    --card: 0.96 0.02 50;
+    --card-foreground: 0.18 0.01 30;
+    --popover: 0.96 0.02 50;
+    --popover-foreground: 0.18 0.01 30;
+
+    --primary: 0.45 0.08 30;
+    --primary-foreground: 0.98 0.01 50;
+
+    --secondary: 0.88 0.04 55;
+    --secondary-foreground: 0.18 0.01 30;
+    --muted: 0.9 0.03 50;
+    --muted-foreground: 0.35 0.02 30;
+
+    --accent: 0.6 0.06 25;
+    --accent-foreground: 0.98 0.01 50;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0.01 50;
+
+    --border: 0.92 0.02 50;
+    --input: 0.94 0.02 50;
+    --ring: 0.6 0.06 25;
+
+    --chart-1: 0.6 0.06 25;
+    --chart-2: 0.45 0.08 30;
+    --chart-3: 0.88 0.04 55;
+    --chart-4: 0.7 0.05 40;
+    --chart-5: 0.5 0.07 28;
+
+    --sidebar: 0.98 0 0;
+    --sidebar-foreground: 0.15 0 0;
+    --sidebar-primary: 0.35 0 0;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.95 0 0;
+    --sidebar-accent-foreground: 0.25 0 0;
+    --sidebar-border: 0.9 0 0;
+    --sidebar-ring: 0.35 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  @font-face {
+    font-family: "Fraunces";
+    src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lora";
+    src: url("/assets/fonts/Lora.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "JetBrainsMono";
+    src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  .glow-soft {
+    box-shadow: 0 0 20px oklch(var(--accent) / 0.15), 0 0 40px
+      oklch(var(--accent) / 0.08);
+  }
+
+  .blur-subtle {
+    backdrop-filter: blur(12px);
+  }
+
+  .gradient-luxury {
+    background: linear-gradient(
+      135deg,
+      oklch(var(--secondary)) 0%,
+      oklch(var(--card)) 100%
+    );
+  }
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}

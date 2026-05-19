@@ -1,0 +1,27 @@
+{
+  "overview": "Premium 3D animated portfolio website for Makeup by Pinkie Thakur — a luxury makeup artist studio in Kalyan, Maharashtra. Features stunning Three.js animations, celebrity work showcases, Indian client testimonials, services gallery, and floating contact buttons in a beige and brown luxury theme.",
+  "features": [
+    "Full 3D animated hero section with Three.js floating objects",
+    "Premium beige and brown luxury theme with glow effects",
+    "Services section with animated cards",
+    "Celebrity work showcase section",
+    "Indian client testimonials carousel",
+    "Portfolio gallery with all client photos",
+    "Why Choose Us section with animated icons",
+    "FAQ accordion section",
+    "Google Maps location embed",
+    "Floating WhatsApp and Instagram buttons",
+    "Responsive across all devices"
+  ],
+  "category": "portfolio",
+  "tags": [
+    "makeup",
+    "beauty",
+    "portfolio",
+    "3d-animations",
+    "luxury",
+    "bridal",
+    "india"
+  ],
+  "last_updated": "2026-05-18T18:23:18.545Z"
+}
