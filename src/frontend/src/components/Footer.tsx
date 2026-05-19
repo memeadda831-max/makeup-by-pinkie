@@ -166,14 +166,14 @@ export default function Footer() {
             © {currentYear} Makeup by Pinkie Thakur. All rights reserved.
           </p>
           <p className="font-body text-xs text-primary-foreground/30 text-center">
-            Built with love using{" "}
+            
             <a
               href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary-foreground/60 transition-smooth underline underline-offset-2"
             >
-              caffeine.ai
+              
             </a>
           </p>
         </div>
